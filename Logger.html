@@ -20,7 +20,7 @@
             opacity: 0;
         }
         .slide-visible {
-            display: block;
+            display: flex; /* Changed to flex for better centering */
             opacity: 1;
         }
     </style>
@@ -38,7 +38,7 @@
         <main id="presentation-container" class="bg-white rounded-2xl shadow-2xl overflow-hidden relative" style="height: 60vh; min-height: 500px;">
 
             <!-- Slide 1: Title -->
-            <div id="slide-1" class="slide slide-visible p-8 md:p-12 h-full flex flex-col justify-center items-center text-center bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+            <div id="slide-1" class="slide slide-visible p-8 md:p-12 h-full flex-col justify-center items-center text-center bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
                 <div class="absolute inset-0 bg-black bg-opacity-50"></div>
                 <div class="relative z-10">
                     <h2 class="text-4xl md:text-6xl font-bold text-white leading-tight">Loggerhead Sea Turtle</h2>
@@ -48,7 +48,7 @@
             </div>
 
             <!-- Slide 2: About the Species -->
-            <div id="slide-2" class="slide slide-hidden p-8 md:p-12 h-full flex flex-col md:flex-row items-center gap-8">
+            <div id="slide-2" class="slide slide-hidden p-8 md:p-12 h-full flex-col md:flex-row items-center gap-8">
                 <div class="w-full md:w-1/2">
                     <h3 class="text-3xl font-bold text-teal-700 mb-4">About the Loggerhead</h3>
                     <p class="mb-4">Loggerheads are named for their massive heads and powerful jaws, which they use to crush the shells of their prey. They are the most common sea turtle that nests in Alabama.</p>
@@ -65,21 +65,21 @@
             </div>
 
             <!-- Slide 3: Habitat & Range in Alabama -->
-            <div id="slide-3" class="slide slide-hidden p-8 md:p-12 h-full flex flex-col md:flex-row-reverse items-center gap-8">
+            <div id="slide-3" class="slide slide-hidden p-8 md:p-12 h-full flex-col md:flex-row-reverse items-center gap-8">
                  <div class="w-full md:w-1/2">
                     <h3 class="text-3xl font-bold text-teal-700 mb-4">Habitat & Alabama Range</h3>
                     <p class="mb-4">Loggerheads are found in temperate and tropical regions of the Atlantic, Pacific, and Indian Oceans. They prefer coastal habitats like bays and estuaries, but also venture into the open ocean.</p>
                     <p class="font-semibold text-gray-700 mb-2">In Alabama:</p>
                     <p>They are found in the waters of the Gulf of Mexico. Nesting activity is crucial and primarily occurs on the beaches of Baldwin and Mobile counties, particularly along the Fort Morgan Peninsula and on Dauphin Island.</p>
                 </div>
-                <div class="w-full md:w-1/2">
+                <div class="w-full md:w-1/2 flex flex-col items-center justify-center">
                     <img src="https://i.imgur.com/83p5g2x.png" alt="A map of Alabama's coastline highlighting nesting areas for the Loggerhead Sea Turtle." class="rounded-lg shadow-lg w-full h-auto object-contain">
-                    <p class="text-center text-sm mt-2 italic text-gray-500">Loggerhead nesting areas in Alabama.</p>
+                    <p class="text-center text-sm mt-2 italic text-gray-500">Map of Loggerhead nesting areas in Alabama.</p>
                 </div>
             </div>
 
             <!-- Slide 4: Nesting Habits -->
-            <div id="slide-4" class="slide slide-hidden p-8 md:p-12 h-full flex flex-col md:flex-row items-center gap-8">
+            <div id="slide-4" class="slide slide-hidden p-8 md:p-12 h-full flex-col md:flex-row items-center gap-8">
                 <div class="w-full md:w-1/2">
                     <h3 class="text-3xl font-bold text-teal-700 mb-4">Nesting Habits</h3>
                     <p class="mb-4">Females migrate long distances to return to the same beaches where they were born to lay their own eggs. They emerge from the water at night to dig their nests.</p>
@@ -89,14 +89,14 @@
                         <li><span class="font-semibold">Incubation:</span> Eggs incubate in the warm sand for about 60 days. The temperature of the sand determines the sex of the hatchlings.</li>
                     </ul>
                 </div>
-                <div class="w-full md:w-1/2">
+                <div class="w-full md:w-1/2 flex flex-col items-center justify-center">
                     <img src="https://images.pexels.com/photos/15981156/pexels-photo-15981156/free-photo-of-a-baby-turtle-on-the-sand.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="A baby sea turtle hatchling making its way to the ocean." class="rounded-lg shadow-lg w-full h-auto object-cover">
                     <p class="text-center text-sm mt-2 italic text-gray-500">A hatchling's perilous journey to the sea.</p>
                 </div>
             </div>
 
             <!-- Slide 5: Movement & Locomotion -->
-             <div id="slide-5" class="slide slide-hidden p-8 md:p-12 h-full flex flex-col md:flex-row-reverse items-center gap-8">
+             <div id="slide-5" class="slide slide-hidden p-8 md:p-12 h-full flex-col md:flex-row-reverse items-center gap-8">
                 <div class="w-full md:w-1/2">
                     <h3 class="text-3xl font-bold text-teal-700 mb-4">Movement & Locomotion</h3>
                     <p class="mb-4">Loggerheads are powerful swimmers, using their long front flippers for propulsion and their shorter back flippers for steering. On land, they move much more clumsily.</p>
@@ -112,28 +112,28 @@
             </div>
 
             <!-- Slide 6: Footprints for Tracking -->
-            <div id="slide-6" class="slide slide-hidden p-8 md:p-12 h-full flex flex-col items-center justify-center text-center">
+            <div id="slide-6" class="slide slide-hidden p-8 md:p-12 h-full flex-col items-center justify-center text-center">
                  <h3 class="text-3xl font-bold text-teal-700 mb-4">Footprints for Tracking Models</h3>
                  <p class="max-w-3xl mb-6">Identifying turtle tracks is key to conservation efforts. The tracks indicate a nesting attempt and help volunteers locate and protect nests. Loggerhead tracks have a distinct pattern.</p>
-                 <div class="flex flex-col md:flex-row gap-6 items-start">
+                 <div class="flex flex-col md:flex-row gap-6 items-center">
                     <div class="w-full md:w-1/2 text-left bg-gray-50 p-4 rounded-lg">
                         <h4 class="font-bold text-lg mb-2">Key Characteristics:</h4>
                         <ul class="list-disc list-inside space-y-2">
                            <li><span class="font-semibold">Gait:</span> Alternating (diagonal) marks from the front flippers. The tracks are not parallel.</li>
                            <li><span class="font-semibold">Tail Drag:</span> A wavy or straight line down the middle, created by the tail dragging in the sand.</li>
-                           <li><span class="font-semibold">No Rear Marks:</span> Unlike freshwater turtles, their rear flippers don't usually leave distinct marks.</li>
+                           <li><span class="font-semibold">No Rear Marks:</span> Their rear flippers don't usually leave distinct marks.</li>
                            <li><span class="font-semibold">Width:</span> The crawl is typically 25-35 inches wide.</li>
                         </ul>
                     </div>
-                    <div class="w-full md:w-1/2">
+                    <div class="w-full md:w-1/2 flex flex-col items-center justify-center">
                         <img src="https://i.imgur.com/uGOUd9J.jpeg" alt="Photograph of loggerhead turtle tracks on a sandy beach." class="rounded-lg shadow-md w-full">
-                        <p class="text-sm mt-2 italic text-gray-500">Loggerhead tracks showing the alternating flipper marks and central tail drag.</p>
+                        <p class="text-sm mt-2 italic text-gray-500">Loggerhead tracks showing alternating flipper marks and a central tail drag.</p>
                     </div>
                  </div>
             </div>
             
             <!-- Slide 7: Resources -->
-            <div id="slide-7" class="slide slide-hidden p-8 md:p-12 h-full flex flex-col justify-center items-center">
+            <div id="slide-7" class="slide slide-hidden p-8 md:p-12 h-full flex-col justify-center items-center">
                  <h3 class="text-3xl font-bold text-teal-700 mb-6 text-center">Learn More & Get Involved</h3>
                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl">
                     <div class="bg-teal-50 p-4 rounded-lg">
@@ -186,7 +186,6 @@
 
             function updateSlides() {
                 slides.forEach(slide => {
-                    // Using style.display for direct control
                     slide.style.display = 'none';
                     slide.classList.remove('slide-visible');
                     slide.classList.add('slide-hidden');
@@ -194,17 +193,15 @@
 
                 const activeSlide = document.getElementById(`slide-${currentSlide}`);
                 if (activeSlide) {
-                    activeSlide.style.display = 'flex'; // Use flex for consistency with layout
-                    // Trigger reflow for transition
+                    // Using style.display is more direct for hiding/showing
+                    activeSlide.style.display = 'flex';
+                    // Force a reflow before adding the class to ensure the transition plays
                     void activeSlide.offsetWidth;
                     activeSlide.classList.remove('slide-hidden');
                     activeSlide.classList.add('slide-visible');
                 }
                 
-                // Update indicator text
                 slideIndicator.textContent = `Slide ${currentSlide} / ${totalSlides}`;
-
-                // Update button states
                 prevBtn.disabled = currentSlide === 1;
                 nextBtn.disabled = currentSlide === totalSlides;
             }
@@ -223,9 +220,10 @@
                 }
             });
 
-            // Initialize first slide
+            // Initialize the first slide
             updateSlides();
         });
     </script>
 </body>
 </html>
+
