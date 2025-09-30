@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endangered Turtles of Alabama: The Kemp's Ridley Sea Turtle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+        }
+        .slide-content {
+             animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="bg-white rounded-2xl shadow-2xl w-full max-w-4xl overflow-hidden">
+        <div class="p-8 md:p-12 slide-container">
+
+            <!-- Slide 1 -->
+            <div id="slide-1" class="slide active">
+                <div class="slide-content grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Meet the Kemp's Ridley</h1>
+                        <h2 class="text-xl text-gray-600 font-semibold mb-6">Lepidochelys kempii</h2>
+                        <ul class="space-y-3 text-gray-700">
+                            <li><span class="font-bold text-blue-600">Smallest Sea Turtle:</span> The smallest in the world! Adults weigh 70-100 lbs and are about 2 ft long.</li>
+                            <li><span class="font-bold text-red-600">Most Endangered:</span> Critically endangered and facing extinction.</li>
+                            <li><span class="font-bold text-green-600">Color:</span> Adults have a grayish-green top shell and a pale, yellowish bottom shell.</li>
+                            <li><span class="font-bold text-purple-600">Unique Nesting:</span> The only sea turtle that nests during the day in large groups called "arribadas".</li>
+                        </ul>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1587972985335-d72b2210a1b3?q=80&w=2070&auto=format&fit=crop" alt="Kemp's Ridley Sea Turtle swimming" class="rounded-lg shadow-md w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div id="slide-2" class="slide">
+                 <div class="slide-content grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Habitat: Where They Live</h1>
+                        <ul class="space-y-3 text-gray-700">
+                            <li><span class="font-bold text-blue-600">Primary Habitat:</span> Found almost exclusively in the Gulf of Mexico.</li>
+                            <li><span class="font-bold text-green-600">Shallow Waters:</span> They prefer shallow, coastal waters with sandy or muddy bottoms to find food.</li>
+                            <li><span class="font-bold text-yellow-600">Foraging Grounds:</span> Juveniles may travel up the Atlantic coast, but adults stick to the Gulf, with major feeding areas off Louisiana and Florida.</li>
+                        </ul>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=2070&auto=format&fit=crop" alt="Sandy beach habitat" class="rounded-lg shadow-md w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div id="slide-3" class="slide">
+                 <div class="slide-content grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Kemp's Ridleys in Alabama</h1>
+                        <ul class="space-y-3 text-gray-700">
+                            <li><span class="font-bold text-blue-600">Rare Visitors:</span> While not as common as Loggerheads, they are occasional visitors to Alabama's coastal waters.</li>
+                            <li><span class="font-bold text-green-600">Nesting Sites:</span> Nests have been found on Alabama's beaches, including in Baldwin and Mobile counties and at the Bon Secour National Wildlife Refuge.</li>
+                            <li><span class="font-bold text-red-600">Conservation Efforts:</span> If you see a sea turtle, give it space and call the hotline at 1-866-732-8878.</li>
+                        </ul>
+                    </div>
+                     <img src="https://images.unsplash.com/photo-1616331853142-2b6ab0ab0e0c?q=80&w=1974&auto=format&fit=crop" alt="Alabama Gulf Coast beach" class="rounded-lg shadow-md w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div id="slide-4" class="slide">
+                 <div class="slide-content grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Nesting Habits</h1>
+                        <ul class="space-y-3 text-gray-700">
+                            <li><span class="font-bold text-blue-600">Daylight Nesters:</span> They are unique for nesting during the daytime.</li>
+                            <li><span class="font-bold text-green-600">Arribadas:</span> Most nesting happens in a synchronized event in Mexico, but solitary nesting occurs in places like Alabama.</li>
+                            <li><span class="font-bold text-yellow-600">Nesting Season:</span> In Alabama, the season is from May 1st to October 31st.</li>
+                            <li><span class="font-bold text-purple-600">Egg Laying:</span> Females lay about two nests per season, each with around 100 eggs that incubate for 50-60 days.</li>
+                        </ul>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1549996023-863704544d44?q=80&w=2070&auto=format&fit=crop" alt="Sea turtle hatchlings heading to the sea" class="rounded-lg shadow-md w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div id="slide-5" class="slide">
+                <div class="slide-content grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Locomotion & Movement</h1>
+                        <ul class="space-y-3 text-gray-700">
+                            <li><span class="font-bold text-blue-600">In the Water:</span> Graceful swimmers that use their long front flippers for propulsion in a motion that resembles flying. Their rear flippers are used for steering.</li>
+                            <li><span class="font-bold text-green-600">On Land:</span> Movement on the beach is slow and difficult. They use their flippers to drag their bodies across the sand.</li>
+                        </ul>
+                    </div>
+                     <img src="https://images.unsplash.com/photo-1543874956-6c8a76943532?q=80&w=1964&auto=format&fit=crop" alt="Sea turtle swimming gracefully" class="rounded-lg shadow-md w-full h-full object-cover">
+                </div>
+            </div>
+            
+            <!-- Slide 6 -->
+            <div id="slide-6" class="slide">
+                <div class="slide-content grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Tracking: The Footprints</h1>
+                        <ul class="space-y-3 text-gray-700">
+                           <li><span class="font-bold text-blue-600">Symmetrical Crawl:</span> They pull with both front flippers at the same time, unlike the alternating motion of Loggerheads.</li>
+                           <li><span class="font-bold text-green-600">Track Appearance:</span> This creates parallel marks from the front flippers. The shell and tail often leave a drag mark down the center of the track.</li>
+                        </ul>
+                    </div>
+                     <img src="https://images.unsplash.com/photo-1620835158913-0972238a2e5c?q=80&w=1964&auto=format&fit=crop" alt="Turtle tracks in the sand leading to the ocean" class="rounded-lg shadow-md w-full h-full object-cover">
+                </div>
+            </div>
+            
+            <!-- Slide 7 -->
+            <div id="slide-7" class="slide">
+                <div class="slide-content">
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">Useful Links & Videos</h1>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                             <h2 class="text-2xl font-bold text-gray-700 mb-4">Information</h2>
+                             <ul class="space-y-3">
+                                 <li><a href="https://www.fisheries.noaa.gov/species/kemps-ridley-turtle" target="_blank" class="text-blue-600 hover:underline">NOAA Fisheries</a></li>
+                                 <li><a href="https://www.outdooralabama.com/turtles/kemps-ridley-sea-turtle" target="_blank" class="text-blue-600 hover:underline">Outdoor Alabama</a></li>
+                                 <li><a href="https://www.fws.gov/species/kemps-ridley-sea-turtle-lepidochelys-kempii" target="_blank" class="text-blue-600 hover:underline">U.S. Fish & Wildlife Service</a></li>
+                                 <li><a href="https://www.joinacf.org/about-sea-turtles" target="_blank" class="text-blue-600 hover:underline">Alabama Coastal Foundation</a></li>
+                             </ul>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-700 mb-4">Videos</h2>
+                             <ul class="space-y-3">
+                                 <li><a href="https://www.youtube.com/watch?v=afgsYchpD_Q" target="_blank" class="text-blue-600 hover:underline">Saving the Kemp's Ridley (Texas)</a></li>
+                                 <li><a href="https://www.pbslearningmedia.org/resource/endangered-sea-turtle-kemps-ridley-video/chasing-the-tide/" target="_blank" class="text-blue-600 hover:underline">Life Cycle of the Kemp's Ridley (PBS)</a></li>
+                                 <li><a href="https://www.youtube.com/watch?v=5oVX0gzMeyQ" target="_blank" class="text-blue-600 hover:underline">Documentary Trailer</a></li>
+                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="bg-gray-50 p-4 flex justify-between items-center border-t border-gray-200">
+            <button id="prevBtn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed">Previous</button>
+            <div id="slide-counter" class="text-gray-600 text-sm font-medium">Slide 1 of 7</div>
+            <button id="nextBtn" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed">Next</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const slideCounter = document.getElementById('slide-counter');
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove('active');
+                });
+                slides[index].classList.add('active');
+                updateNav();
+            }
+
+            function updateNav() {
+                // Update slide counter
+                slideCounter.textContent = `Slide ${currentSlide + 1} of ${totalSlides}`;
+
+                // Update button states
+                if (currentSlide === 0) {
+                    prevBtn.disabled = true;
+                } else {
+                    prevBtn.disabled = false;
+                }
+
+                if (currentSlide === totalSlides - 1) {
+                    nextBtn.disabled = true;
+                } else {
+                    nextBtn.disabled = false;
+                }
+            }
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < totalSlides - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Initial setup
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
